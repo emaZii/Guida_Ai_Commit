@@ -1,0 +1,25 @@
+### Linee Guide per push pull e commit 
+
+  Un prefisso: messo tra parentesi quadre che indica il tipo di modifica apportata. 
+
+## I possibili prefissi sono: 
+  
+  - [FIX]: per correzioni di bug. Viene principalmente utilizzato nella versione stabile, ma è valido anche se stai risolvendo un bug recente nella versione di sviluppo. 
+  - [REF]: per il refactoring. Viene utilizzato quando una funzionalità viene pesantemente riscritta. 
+  - [ADD]: per l’aggiunta di nuovi moduli 
+  - [REM]: per la rimozione di risorse. Ad esempio, la rimozione di codice inutilizzato, viste o moduli. 
+  - [REV]: per il revert di commit. Se un commit causa problemi o non è desiderato, viene utilizzato questo tag. 
+  - [MOV]: per lo spostamento di file. Si consiglia di utilizzare il comando git move e di non modificare il contenuto del file spostato, altrimenti Git potrebbe perdere traccia della sua storia. 
+  - [REL]: per i commit di rilascio. Ad esempio, nuove versioni stabili principali o minori. 
+  - [IMP]: per miglioramenti: la maggior parte delle modifiche apportate nella versione di sviluppo sono miglioramenti non correlati ad altri tag 
+  - [MERGE]: per i commit di merge: vengono utilizzati per portare avanti correzioni di bug, ma possono anche rappresentare il commit principale per una funzionalità che coinvolge più commit. 
+  - [CLA]: per la firma dell’ Odoo Individual Contributor License 
+  - [I18N]: per aggiornamenti nei file di traduzione
+
+A proposito di commit, ogni pull request deve contenerne una, massimo due, che comprenderanno tutte le modifiche effettuate.
+Dato che durante uno sviluppo è facile che ci siano diverse commit per lo stesso branch è buona usanza raggrupparle 
+in un’unica con i seguenti comandi: 
+
+  git reset --soft HEAD~X 
+  git commit -m "new commit message" 
+  git push –f 
