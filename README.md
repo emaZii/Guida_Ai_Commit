@@ -23,3 +23,10 @@ in un’unica con i seguenti comandi:
   git reset --soft HEAD~X 
   git commit -m "new commit message" 
   git push –f 
+
+
+  ---------------------------------------
+pulire i db registry di odoo
+
+  ./odoo-bin -c /home/emanue/odoo-folder/odoo-conf/17/zaccaria.conf -d zaccaria17 -u all --stop-after-init
+
