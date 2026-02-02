@@ -15,7 +15,7 @@
   - [MERGE]: per i commit di merge: vengono utilizzati per portare avanti correzioni di bug, ma possono anche rappresentare il commit principale per una funzionalità che coinvolge più commit. 
   - [CLA]: per la firma dell’ Odoo Individual Contributor License 
   - [I18N]: per aggiornamenti nei file di traduzione
-
+  - [MIG] : migrazione da una versione ad un altra esempio: 18.0 alla 19.0 
 A proposito di commit, ogni pull request deve contenerne una, massimo due, che comprenderanno tutte le modifiche effettuate.
 Dato che durante uno sviluppo è facile che ci siano diverse commit per lo stesso branch è buona usanza raggrupparle 
 in un’unica con i seguenti comandi: 
